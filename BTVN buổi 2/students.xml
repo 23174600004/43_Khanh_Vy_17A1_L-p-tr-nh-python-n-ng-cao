@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<students_list>
+    <student>
+        <student_id>SV001</student_id>
+        <name>Nguyễn Văn A</name>
+        <birth_year>2000</birth_year>
+        <class>CTK42</class>
+        <gender>Nam</gender>
+    </student>
+    <student>
+        <student_id>SV002</student_id>
+        <name>Trần Thị B</name>
+        <birth_year>1999</birth_year>
+        <class>CTK41</class>
+        <gender>Nữ</gender>
+    </student>
+    <student>
+        <student_id>SV003</student_id>
+        <name>Phạm Văn C</name>
+        <birth_year>2001</birth_year>
+        <class>CTK43</class>
+        <gender>Nam</gender>
+    </student>
+    <student>
+        <student_id>SV004</student_id>
+        <name>Hoàng Thị D</name>
+        <birth_year>2000</birth_year>
+        <class>CTK42</class>
+        <gender>Nữ</gender>
+    </student>
+</students_list>

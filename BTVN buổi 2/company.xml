@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<company>
+    <name>Công ty ABC</name>
+    <director>
+        <name>Nguyễn Văn A</name>
+        <email>nguyenvana@abc.com</email>
+    </director>
+    <address>
+        <street>123 Đường X, Phường Y</street>
+        <city>Hà Nội</city>
+        <postal_code>100000</postal_code>
+    </address>
+    <contact>
+        <phone>0123456789</phone>
+        <fax>0241234567</fax>
+    </contact>
+    <tax_id>123456789</tax_id>
+</company>
