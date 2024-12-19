@@ -1,0 +1,2 @@
+print(workers[:5])  # In 5 phần tử đầu của mảng `workers`
+print(workers.dtype)  # Kiểm tra kiểu dữ liệu
