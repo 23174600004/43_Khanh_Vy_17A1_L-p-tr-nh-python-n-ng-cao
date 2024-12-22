@@ -1,0 +1,32 @@
+mport pandas as pd
+
+# Tạo DataFrame giả định với các cột 'date', 'symbol', 'open', 'high', 'low', 'close', 'volume'
+data = {
+    'date': ['2024-12-01', '2024-12-01', '2024-12-02', '2024-12-02'],
+    'symbol': ['AAPL', 'GOOGL', 'AAPL', 'GOOGL'],
+    'open': [150, 2750, 152, 2770],
+    'high': [155, 2800, 154, 2790],
+    'low': [149, 2740, 151, 2755],
+    'close': [153, 2780, 153, 2785],
+    'volume': [1000000, 2000000, 1500000, 2500000]
+}
+
+stocks = pd.DataFrame(data)
+
+# Tạo MultiIndex với 'date' và 'symbol'
+stocks.set_index(['date', 'symbol'], inplace=True)
+
+# Tính trung bình theo từng nhóm
+average_stocks = stocks.groupby(['date', 'symbol']).agg({
+    'open': 'mean',
+    'high': 'mean',
+    'low': 'mean',
+    'close': 'mean',
+    'volume': 'mean'
+})
+
+# Sắp xếp dữ liệu theo ngày và mã chứng khoán
+average_stocks.sort_index(inplace=True)
+
+# Hiển thị 5 ngày đầu tiên
+print(average_stocks.head(5))
